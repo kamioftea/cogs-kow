@@ -3,10 +3,8 @@
 __deployer__.zip
 __pycache__/
 node_modules
-package-lock.json
 .DS_Store
 /.idea
 /*.iml
 /static/assets/images/icons/
-/static/assets/fonts/wolfsbane2.*
 /static/dist/
