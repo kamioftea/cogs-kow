@@ -1,0 +1,85 @@
+---
+css: index
+---
+<section role="banner" class="cogs-header margin-bottom-1">
+	<img src="/images/logo.png" alt="Chesterfield Open Gaming Society Logo" class="logo">
+	<span class="h1 club-name">Chesterfield Open Gaming Society</span>
+	<h1>Kings of War</h1>
+</section>
+
+<main style="max-width: 960px; margin: auto">
+	<p class="lead">
+		Chesterfield Open Gaming Society has been playing Kings of War since first edition, and it
+		is one of the most common games played at the club.
+	</p>
+	<h2>Upcoming Events</h2>
+	<div class="upcoming-events">
+		{% for event in collections.event -%}
+			<a href="{{ event.url }}"
+			   aria-labelledby="{{ event.data.title | kebabCase }}-find-out-more">
+				<section aria-labelledby="{{ event.data.title | kebabCase }}-heading" class="event">
+					<img src="/images/{{ event.data.image }}"
+					     alt="{{ event.data.imageDescription }}"
+					     role="presentation"
+					/>
+					<h3 id="{{ event.data.title | kebabCase }}-heading" class="event-title">
+						{{ event.data.title }}<br>
+						<small>{{ event.data.subtitle }}</small>
+					</h3>
+					<button class="button more-info"
+					        id="{{ event.data.title | kebabCase }}-find-out-more"
+					        type="button"
+					>
+						{{ event.data.title }} event page
+						{{ 'chevron-right' | icon | safe }}
+					</button>
+				</section>
+			</a>
+		{%- endfor %}
+	</div>
+
+	<h2>Club Nights</h2>
+	<p>
+		As well as the organised play events, we also play Kings of War games on regular gaming
+		club nights.
+	</p>
+
+	<p>
+		Club nights are every Monday (except Bank Holidays), and the second and fourth Wednesdays of
+		the month. They run from 19:00 to 22:00, which is usually adequate for a 200 point game, or
+		two 1000 point games. They are held at
+		<a href="https://parishcentrestonegravels.co.uk/">
+			The Parish Centre, Stonegravels
+		</a>:
+	</p>
+
+	<p style="margin-left: 2rem">
+		The Parish Centre<br/>
+		Stonegravels<br/>
+		91 Sheffield Road<br/>
+		Chesterfield<br/>
+		S41 7JH
+	</p>
+
+	<p>
+		Please arrange a game with an opponent beforehand, or come to one of our dedicated Kings of
+		War evenings. The next of these is Monday 21st November,
+		<a href="https://fb.me/e/1Zp6VWUk7" target="_blank">see the Facebook event</a> for more
+		details.
+	</p>
+
+	<p>
+		<a href="https://www.c-o-g-s.org.uk/p/about2.html">The main COGS website</a> has more
+		details about the club, gaming nights, and other upcoming events.
+		<a href="https://www.facebook.com/groups/main.cogs">Join our Facebook group</a> to keep
+		up-to-date with what's going on at the club.
+	</p>
+</main>
+
+<footer>
+	<p class="disclaimer">
+		Mantic® and Kings of War® and all associated names, characters, places, and things are
+		copyright © and ™ Mantic Games. Chesterfield Open Gaming Society is not associated with
+		Mantic Games in any way.
+	</p>
+</footer>

@@ -1,0 +1,18 @@
+<!doctype html>
+<!--suppress HtmlUnknownTarget -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ '/styles/globals.css' | url}}">
+	{% if css -%}
+		{%- set cssPath -%}/styles/{{ css }}.css{%- endset -%}
+		<link rel="stylesheet" href="{{ cssPath | url}}">
+	{%- endif %}
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+	<title>{{ title }}{{ ' | ' if title }}Kings of War | Chesterfield Open Gaming Society</title>
+</head>
+<body>
+	{{ content | safe }}
+</body>
+</html>

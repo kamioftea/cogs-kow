@@ -1,0 +1,30 @@
+{
+  "name": "cogs-kow",
+  "version": "1.0.0",
+  "description": "Static site + lambda for COGs KoW pages",
+  "scripts": {
+    "start": "concurrently \"npm:watch:*\"",
+    "watch:11ty": "npx @11ty/eleventy --serve --port=8081",
+    "watch:scss": "npx sass -Inode_modules/foundation-sites/scss static/assets/styles:static/dist/styles --watch",
+    "build": "rm -rf static/dist/ && npx sass -Inode_modules/foundation-sites/scss static/assets/styles:static/dist/styles && npx @11ty/eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamioftea/cogs-kow.git"
+  },
+  "author": "Jeff Horton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamioftea/cogs-kow/issues"
+  },
+  "homepage": "https://github.com/kamioftea/cogs-kow#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
+    "concurrently": "^7.5.0",
+    "feather-icons": "^4.29.0",
+    "foundation-sites": "^6.7.5",
+    "markdown-it": "^13.0.1",
+    "node-sass": "^8.0.0"
+  }
+}
