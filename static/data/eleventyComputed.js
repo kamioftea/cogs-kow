@@ -1,5 +1,5 @@
 module.exports = {
-    open_graph: data => {
+    openGraph: data => {
         const defaults = Object.fromEntries(
             [
                 ['type', 'website'],
@@ -19,7 +19,7 @@ module.exports = {
 
         return {
             ...defaults,
-            ...(data.open_graph ?? {})
+            ...(data.openGraph ?? {})
         }
     }
 }

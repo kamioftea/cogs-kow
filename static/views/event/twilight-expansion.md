@@ -7,6 +7,8 @@ image: escalation.png
 imageDescription: >
   A mighty army of skeleton warriors marches against a small force of elves. Most of the image is in greyscale,
   but the elf force is monochrome yellow.
+openGraph:
+  image: https://kow.c-o-g-s.org.uk/images/twilight-expansion-og.png
 disclaimer: >
   Mantic® and Kings of War® and all associated names, characters, places, and things are copyright © and ™ Mantic Games. 
   The event image is [The Battle of Borath Lei](https://www.manticgames.com/wallpapers/) © Mantic Games. 

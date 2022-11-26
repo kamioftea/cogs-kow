@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	{% for property, content in open_graph %}
+	{% for property, content in openGraph %}
 		<meta property="og:{{ property }}" content="{{ content }}" />
 	{% endfor %}
 	<link rel="stylesheet" href="{{ '/styles/globals.css' | url}}">
