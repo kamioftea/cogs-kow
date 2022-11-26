@@ -90,13 +90,40 @@
       @include breakpoint(25rem down) {
         font-size: rem-calc(32px);
       }
+
+      small {
+        font-size: rem-calc(32px);
+        @include breakpoint(25rem down) {
+          font-size: rem-calc(24px);
+        }
+      }
+    }
+
+    @include breakpoint(18rem down) {
+      min-height: 10rem;
+      img {
+        position: absolute;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    @include breakpoint(14rem down) {
+      min-height: 15rem;
     }
 
     .more-info {
       position: absolute;
-      bottom: 0.5rem;
+      bottom: 1rem;
       right: 1rem;
       font-size: rem-calc(18px);
+      margin-bottom: 0;
+      margin-left: 1rem;
+
+      @include breakpoint(25rem down) {
+        font-size: rem-calc(12px);
+        padding: 0.5rem;
+      }
     }
   }
 }
