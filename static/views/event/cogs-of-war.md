@@ -9,7 +9,7 @@ imageDescription: >
   but the elf force is monochrome yellow.
 tags: event
 description: >
-  A one-day Kings of War tournament using the 3.5 edition rules.
+  A one-day Kings of War singles tournament using the 3.5 edition rules.
 disclaimer: >
   Mantic® and Kings of War® and all associated names, characters, places, and things are copyright © and ™ Mantic Games.
   The event image is [The Seige of Chill](https://www.manticgames.com/wallpapers/) © Mantic Games.

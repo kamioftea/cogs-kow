@@ -4,6 +4,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{% for property, content in open_graph %}
+		<meta property="og:{{ property }}" content="{{ content }}" />
+	{% endfor %}
 	<link rel="stylesheet" href="{{ '/styles/globals.css' | url}}">
 	{% if css -%}
 		{%- set cssPath -%}/styles/{{ css }}.css{%- endset -%}
