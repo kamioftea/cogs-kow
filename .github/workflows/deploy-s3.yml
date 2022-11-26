@@ -29,4 +29,4 @@ jobs:
           aws s3 sync ./static/dist/ s3://${AWS_S3_BUCKET}/ --no-progress --delete
           aws cloudfront create-invalidation \
               --distribution-id ${AWS_CLOUDFRONT_DISTRIBUTION_ID} \
-              --paths /*
+              --paths '/*'
