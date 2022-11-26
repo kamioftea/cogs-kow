@@ -7,6 +7,8 @@ image: cogs-of-war.png
 imageDescription: >
   An army of abyssal dwarves besieges an icy fortress defended by fur-clad humans. Most of the image is in greyscale,
   but the elf force is monochrome yellow.
+openGraph:
+  image: https://kow.c-o-g-s.org.uk/images/cogs-of-war-og.png
 tags: event
 description: >
   A one-day Kings of War singles tournament using the 3.5 edition rules.
