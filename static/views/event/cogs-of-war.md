@@ -31,7 +31,7 @@ about:
 ## Save the date
 
 <p class="lead">
-  Announcing Cogs of War. A 1995 points, one day Kings of War tournament using the 3.5 edition rules.
+  Announcing Cogs of War. A 1995 points, one day Kings of War singles tournament using the 3.5 edition rules.
 </p>
 
 The full rules pack and sign-up will be available at the start of December.
