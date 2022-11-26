@@ -64,7 +64,7 @@
 @import "util/font";
 
 @include font('Wolfsbane', 'fonts/wolfsbane2');
-@import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 @mixin grid-gap() {
@@ -97,7 +97,7 @@ $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $black;
 $body-font-color: $white;
-$body-font-family: 'Spectral', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $body-safe-padding: false;
 $body-antialiased: true;
 $global-margin: 1rem;
@@ -313,12 +313,12 @@ $button-font-weight: null;
 $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
-$button-background: $primary-color;
-$button-background-hover: scale-color($button-background, $lightness: -15%);
-$button-color: $black;
-$button-color-alt: $white;
+$button-background: $black;
+$button-background-hover: scale-color($button-background, $lightness: +15%);
+$button-color: $primary-color;
+$button-color-alt: $black;
 $button-radius: $global-radius;
-$button-border: 1px solid transparent;
+$button-border: 1px solid $primary-color;
 $button-hollow-border-width: 1px;
 $button-sizes: (
   tiny: 0.6rem,
