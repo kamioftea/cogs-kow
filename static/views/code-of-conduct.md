@@ -39,7 +39,7 @@ games or other activities at the event, inappropriate physical contact, and unwe
 Participants asked to stop any harassing behavior are expected to comply immediately.
 
 If a participant engages in harassing behavior, the event organisers may take any action they deem appropriate,
-including warning the offender or expulsion from the conference with no refund.
+including warning the offender or expulsion from the event with no refund.
 
 If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact one
 of the event organisers immediately. It will be made announced who these are in the event pack, and on the day during 
