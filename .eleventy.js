@@ -37,7 +37,8 @@ module.exports = function(eleventyConfig) {
             input: "static/views",
             output: "static/dist",
             layouts: "../layouts",
-            includes: "../includes"
+            includes: "../includes",
+            data: "../data"
         },
         passthroughFileCopy: true,
         markdownTemplateEngine: 'njk',
