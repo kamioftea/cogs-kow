@@ -11,6 +11,14 @@ css: index
 	<h1>Code of Conduct</h1>
 </section>
 
+<nav aria-label="You are here:" role="navigation">
+    <ul class="breadcrumbs">
+        <li><a href="https://www.c-o-g-s.org.uk/">Home</a></li>
+        <li><a href="https://kow.c-o-g-s.org.uk/">Kings of War</a></li>
+        <li><span class="show-for-sr">Current: </span>Code of Conduct</li>
+    </ul>
+</nav>
+
 All attendees, sponsors, and volunteers at our events are required to agree with the following code of conduct. 
 Organisers will enforce this code throughout the event. We expect cooperation from all participants to help ensure a 
 safe environment for everybody.
@@ -42,21 +50,29 @@ If a participant engages in harassing behavior, the event organisers may take an
 including warning the offender or expulsion from the event with no refund.
 
 If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact one
-of the event organisers immediately. It will be made announced who these are in the event pack, and on the day during 
-the event introductions.
-
-You can also contact the following Chesterfield Open Gaming Society committee members regarding any event run by or on 
-behalf of the society.
-
-* Dave - [wiseone@tiscali.co.uk](mailto:wiseone@tiscali.co.uk)
-* Yith - [yith@yith.co.uk](mailto:yith@yith.co.uk)
+of the event organisers immediately. The organisers for an event will be listed in the event pack, and identified on 
+the day during introductions and announcements.
 
 The event organisers will be happy to assist those experiencing harassment to feel safe for the duration of the event. 
 We value your attendance.
 
+You can also contact the following Chesterfield Open Gaming Society committee members regarding any event run by or on
+behalf of Chesterfield Open Gaming Society.
+
+* Dave - [wiseone@tiscali.co.uk](mailto:wiseone@tiscali.co.uk)
+* Yith - [yith@yith.co.uk](mailto:yith@yith.co.uk)
+
 We expect participants to follow these rules during club events, as well as to any associated social events and when
 posting about the event or Chesterfield Open Gaming Society on Facebook and other online media.
 
-This code of conduct was adapted from the [conference code of conduct](http://confcodeofconduct.com/), which is
-licensed under a [Creative Commons Attribution 3.0 Unported License](
-http://creativecommons.org/licenses/by/3.0/deed.en_US). 
+<footer>
+  <p class="disclaimer">
+    This code of conduct was adapted from the <a href="http://confcodeofconduct.com/">conference code of conduct</a>,
+    which is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons 
+    Attribution 3.0 Unported License</a>.
+  </p>
+  <p class="disclaimer">
+    Wolfsbane II font ©<a href="https://www.iconian.com/index.html">Iconian Fonts</a> licenced
+	for non-commercial use.
+  </p>
+</footer>
