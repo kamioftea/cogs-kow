@@ -19,6 +19,9 @@ css: index
     </ul>
 </nav>
 
+<span class="label primary"><strong>DRAFT</strong></span>
+<span class="disclaimer">This code of conduct is a work in progress pending ratification.</span> 
+
 All attendees, sponsors, and volunteers at our events are required to agree with the following code of conduct. 
 Organisers will enforce this code throughout the event. We expect cooperation from all participants to help ensure a 
 safe environment for everybody.
