@@ -6,7 +6,11 @@
     "start": "concurrently \"npm:watch:*\"",
     "watch:11ty": "npx @11ty/eleventy --serve --port=8081",
     "watch:scss": "npx sass -Inode_modules/foundation-sites/scss static/assets/styles:static/dist/styles --watch",
-    "build": "rm -rf static/dist/ && npx sass -Inode_modules/foundation-sites/scss static/assets/styles:static/dist/styles && npx @11ty/eleventy"
+    "watch:scripts": "npm run build:scripts -- --watch",
+    "build": "rm -rf static/dist/ && concurrently \"npm:build:*\"",
+    "build:11ty": "npx @11ty/eleventy",
+    "build:scss": " npx sass -Inode_modules/foundation-sites/scss static/assets/styles:static/dist/styles",
+    "build:scripts": "rollup --config --file static/dist/scripts/app.js --format iife --name App static/includes/app.js"
   },
   "repository": {
     "type": "git",
@@ -24,7 +28,19 @@
     "concurrently": "^7.5.0",
     "feather-icons": "^4.29.0",
     "foundation-sites": "^6.7.5",
+    "htm": "^3.1.1",
     "markdown-it": "^13.0.1",
+    "preact": "^10.11.3",
+    "preact-render-to-string": "^5.2.6",
     "sass": "^1.56.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.2.1",
+    "babel-plugin-htm": "^3.0.0",
+    "rollup": "^2.79.1"
   }
 }

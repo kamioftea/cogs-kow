@@ -164,3 +164,10 @@ footer {
 .disclaimer {
   font-size: rem-calc(12px);
 }
+
+.credentials-form {
+  max-width: rem-calc(560px);
+  margin: auto;
+  padding: $global-padding;
+  border: thin $dark-gray solid;
+}

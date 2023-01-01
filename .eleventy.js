@@ -1,7 +1,11 @@
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const feather = require('feather-icons');
 const inclusiveLangPlugin = require("@11ty/eleventy-plugin-inclusive-language");
-const markdown = require("markdown-it")()
+const markdown = require("markdown-it")();
+
+const { html } = require('htm/preact');
+const render = require('preact-render-to-string');
+const withHydration = require('./static/includes/components/util/with-hydration');
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(EleventyRenderPlugin)
@@ -30,6 +34,10 @@ module.exports = function(eleventyConfig) {
         }
 
         return markdown.render(string ?? '')
+    })
+    eleventyConfig.addPairedShortcode('preact', (children, filename, data = {}) => {
+        const Component = withHydration(require(`./static/includes/components/${filename}.js`));
+        return render(html`<${Component}>${children}<//>`, data, {pretty: true});
     })
 
     return {
