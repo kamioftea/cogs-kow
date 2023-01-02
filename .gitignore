@@ -8,3 +8,5 @@ node_modules
 /*.iml
 /static/assets/images/icons/
 /static/dist/
+/localstack/volume/
+/cogs-api/.build/
