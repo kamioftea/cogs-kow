@@ -2,8 +2,8 @@ import {DynamoDBClient} from "@aws-sdk/client-dynamodb";
 import {GetCommand, PutCommand} from "@aws-sdk/lib-dynamodb";
 import express, { Express, Request, Response } from 'express';
 import serverless from "serverless-http";
-import {User} from "./model/user";
-import {userRouter} from "./routes/users";
+import {User} from "./users/user";
+import {userRouter} from "./users/user-route";
 
 const app: Express = express();
 

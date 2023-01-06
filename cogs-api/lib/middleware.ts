@@ -11,7 +11,7 @@ export const AsyncHandler = <Req, Res>(handler: (req: Request<Req>, res: Respons
             .catch(next);
 
 
-export const ValidateSchema = <Req> (schema: SchemaOf<Req>) =>
+export const ValidateRequestBody = <Req> (schema: SchemaOf<Req>) =>
     (req: RequestWithBody<Req>, res: Response, next: NextFunction) =>
         schema.validate(req.body, {strict: false, stripUnknown: true}).then(
             validated => {

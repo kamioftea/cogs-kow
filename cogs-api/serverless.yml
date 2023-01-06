@@ -27,6 +27,11 @@ provider:
             - dynamodb:DeleteItem
           Resource:
             - Fn::GetAtt: [ UsersTable, Arn ]
+        - Effect: Allow
+          Action:
+            - ses:SendEmail
+          Resource:
+            - arn:aws:ses:eu-west-2:296681679694:identity/kow.c-o-g-s.org.uk
   environment:
     USERS_TABLE: ${self:custom.tableName}
 
@@ -35,6 +40,9 @@ functions:
     handler: handler.handler
     events:
       - httpApi: '*'
+    environment:
+      SOURCE_EMAIL: mail.kow.c-o-g-s.org.uk
+      ADMIN_EMAIL: jeff@goblinoid.co.uk
 
 resources:
   Resources:
